@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
 	--open-sans: "Open Sans", sans-serif;
 	--nunito-sans: "Nunito Sans", sans-serif;
@@ -6,6 +7,7 @@
 	--accent-dark: #f37335;
 	--dark: #443737;
 	--light: #ffffff;
+	--light-rgb: 255, 255, 255;
 	/*Подключение цветов*/
 }
 body {
@@ -17,6 +19,7 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+/* Header */
 .header {
 	display: flex;
 	/* justify-content: space-between; */
@@ -56,6 +59,7 @@ body {
 	background-color: var(--accent-light);
 }
 .cart {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -74,6 +78,7 @@ body {
 	background-repeat: no-repeat;
 }
 .cart-count {
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -84,4 +89,54 @@ body {
 	color: var(--light);
 	font-size: 10px;
 	line-height: auto;
+	left: 17px;
+	bottom: 0;
+}
+/* Hero */
+.hero {
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	padding: 142px 0px;
+}
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(var(--light-rgb), 0.5);
+	gap: 16px;
+	font-size: 15px;
+}
+.breadcrumbs-item {
+	position: relative;
+}
+.breadcrumbs-item:not(:last-child)::after {
+	content: "/";
+	position: absolute;
+	right: -10px;
+	color: rgba(var(--light-rgb), 0.5);
+}
+.breadcrumbs-link {
+	color: rgba(var(--light-rgb), 0.5);
+}
+.breadcrumbs-link:hover {
+	color: var(--accent-light);
+}
+.hero-title {
+	font-family: var(--nunito-sans);
+	font-size: 79px;
+	font-weight: 700;
+	text-transform: capitalize;
+	/* line-height: auto; */
+	color: var(--light);
+	margin: 38px auto 0px;
+}
+.hero-description {
+	max-width: 320px;
+	color: rgba(var(--light-rgb), 0.8);
+	font-size: 15px;
+	line-height: 160%;
+	margin: 38px auto;
 }
