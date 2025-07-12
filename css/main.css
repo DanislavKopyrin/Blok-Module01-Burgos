@@ -11,10 +11,77 @@
 body {
 	font-family: var(--open-sans);
 }
+.container {
+	width: 100%;
+	max-width: 1182px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header {
+	display: flex;
+	/* justify-content: space-between; */
+	gap: 196px;
+	align-items: center;
+	padding: 26px 0px;
+}
 .logo {
+	display: block;
 	background-image: url(../img/logo_burgos.svg);
-	width: 175px;
+	width: 176px;
 	height: 56px;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+.header-nav {
+	flex-grow: 1;
+	display: flex;
+	gap: 46px;
+}
+.header-nav__link {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--dark);
+}
+.header-nav__link::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: transparent;
+	border-radius: 1.5px;
+	/* transition: width 0.3s ease-in-out; */
+}
+.header-nav__link:hover::after {
+	background-color: var(--accent-light);
+}
+.cart {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: auto;
+	color: var(--dark);
+}
+.cart::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 26px;
+	background-image: url(../img/shopping-cart.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.cart-count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--accent-dark);
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	color: var(--light);
+	font-size: 10px;
+	line-height: auto;
 }
