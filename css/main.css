@@ -1,5 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/*Подключение шрифтов*/
+:root {
+	--open-sans: "Open Sans", sans-serif;
+	--nunito-sans: "Nunito Sans", sans-serif;
+	/*Подключение шрифтов*/
+	--accent-light: #fbb731;
+	--accent-dark: #f37335;
+	--dark: #443737;
+	--light: #ffffff;
+	/*Подключение цветов*/
+}
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--open-sans);
+}
+.logo {
+	background-image: url(../img/logo-burgos.svg);
 }
