@@ -25,7 +25,7 @@ li {
 	width: 100%;
 	max-width: 1182px;
 	margin: 0 auto;
-	padding: 0 15px;
+	/* padding: 0 15px; */ /*убрал, что бы контент в баннере не съезжал*/
 }
 /* Header */
 .header {
@@ -154,17 +154,58 @@ li {
 }
 /* Banner */
 .banner {
+	background-image: url(../img/banner_burger.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
 	max-width: 1180px;
-	margin: 0 auto;
-	margin: 140px 0px 0px 0px;
+	margin: 140px auto 0px;
 	background-color: rgb(246, 187, 187);
 }
 .banner-wrapper {
 	padding: 100px;
 }
-.banner-title {
+.banner-title > span {
+	display: block;
+	font-family: var(--open-sans);
+	background-color: var(--accent-dark);
+	max-width: 95px;
+	padding: 5px 0px;
+	border-radius: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.125rem;
+	color: var(--light);
+	margin: 0px 0px 3px 0px;
 }
+.banner-title {
+	font-family: var(--nunito-sans);
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 4.75rem;
+	color: var(--light);
+	margin: 0px 0px 10px 0px;
+}
+
 .banner-description {
+	max-width: 353px;
+	color: rgba(var(--light-rgb), 0.8);
+	font-size: 15px;
+	line-height: 1.5rem;
+	margin: 0px 0px 15px 0px;
 }
 .banner-btn {
+	border: none;
+	border-radius: 5px;
+	font-family: var(--nunito-sans);
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: var(--accent-light);
+	color: var(--dark);
+	padding: 20px 26px;
+	cursor: pointer;
+	/* margin: 15px 0px 0px 0px; */
 }
