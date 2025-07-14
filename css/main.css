@@ -153,17 +153,25 @@ li {
 	margin: 0px auto;
 }
 /* Banner */
-.banner {
+/* Мой код, старт*/
+/* .banner {
 	background-image: url(../img/banner_burger.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	/* max-width: 1182px; */
 	margin: 140px auto 0px;
+!- перенести в banner-wrapper всё, кроме margin: 140px auto 0px;
 }
 .banner-wrapper {
-	/* background-color: rgb(246, 187, 187); */
 	padding: 100px;
+}
+	.banner-title {
+	font-family: var(--nunito-sans);
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 4.75rem;
+	color: var(--light);
+	margin: 0px 0px 9px 0px;
 }
 .banner-title span {
 	display: block;
@@ -172,7 +180,7 @@ li {
 	max-width: 95px;
 	padding: 5px 0px;
 	border-radius: 14px;
-	text-transform: uppercase;
+	!text-transform: uppercase; - перенести в banner-title, т.к. это общий стиль с span
 	text-align: center;
 	font-size: 14px;
 	font-weight: 600;
@@ -180,15 +188,6 @@ li {
 	color: var(--light);
 	margin: 0px 0px 3px 0px;
 }
-.banner-title {
-	font-family: var(--nunito-sans);
-	font-size: 60px;
-	font-weight: 900;
-	line-height: 4.75rem;
-	color: var(--light);
-	margin: 0px 0px 9px 0px;
-}
-
 .banner-description {
 	max-width: 329px;
 	color: rgba(var(--light-rgb), 0.8);
@@ -207,4 +206,66 @@ li {
 	color: var(--dark);
 	padding: 20px 26px;
 	cursor: pointer;
+} */
+/* Мой код, конец*/
+/* Код Анны Блок, начало*/
+.banner {
+	margin: 140px;
+}
+.banner-wrapper {
+	background-image: url(../img/banner_burger.png);
+	/*! background-size: contain; -не правильно */
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*! background-position: center center; - не нужно */
+	padding: 100px 100px 100px 101px;
+}
+.banner-title {
+	color: var(--light);
+	font-family: var(--nunito-sans);
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 126%; /*!4.75rem; = 76px*/
+	text-transform: uppercase;
+	margin: 0px 0px 9px 0px;
+}
+.banner-title span {
+	display: block;
+	max-width: 95px;
+	color: var(--light);
+	font-family: var(--open-sans);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 128%; /*!1.125rem;=18px*/
+	text-transform: uppercase;
+	/*! text-transform: uppercase; - не там находится, но она зачем-то его здесь оставила*/
+	text-align: center;
+	background-color: var(--accent-dark);
+	border-radius: 14px;
+	padding: 5px 0px;
+	margin: 0px 0px 3px 0px;
+}
+.banner-description {
+	max-width: 328px;
+	margin: 0px 0px 14px 0px;
+	color: rgba(var(--light-rgb), 0.8);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%; /*!1.5rem; 24px*/
+}
+.banner-btn {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: var(--nunito-sans);
+	padding: 22px 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--dark);
+	background-color: var(--accent-light);
+	border: none;
+	border-radius: 5px;
+}
+.banner-btn:hover {
+	background-color: var(--accent-dark);
 }
