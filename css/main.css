@@ -8,6 +8,7 @@
 	--dark: #443737;
 	--light: #ffffff;
 	--light-rgb: 255, 255, 255;
+	--line: #dedede;
 	/*Подключение цветов*/
 }
 body {
@@ -29,7 +30,7 @@ li {
 }
 /* Header */
 .header {
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid var(--line);
 }
 .header-wrapper {
 	display: flex;
@@ -210,7 +211,7 @@ li {
 /* Мой код, конец*/
 /* Код Анны Блок, начало*/
 .banner {
-	margin: 140px;
+	margin: 140px 140px 0px 140px;
 }
 .banner-wrapper {
 	background-image: url(../img/banner_burger.png);
@@ -268,4 +269,202 @@ li {
 }
 .banner-btn:hover {
 	background-color: var(--accent-dark);
+}
+/* Burger Menu*/
+/* Мой код, старт*/
+/* .main {
+}
+.burger-menu__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 100px 0px 34px 0px;
+}
+.burger-menu__title {
+	font-family: var(--nunito-sans);
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 56px;
+	text-transform: uppercase;
+	color: var(--dark);
+	margin: 0;
+}
+
+#burger-menu__select {
+	font-family: var(--open-sans);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: var(--dark);
+	border-radius: 22px;
+	border-color: #dedede;
+	padding: 9px;
+	appearance: none;
+	background-image: url(../img/menu/chevron-down.svg);
+	background-repeat: no-repeat;
+	background-position: right 30px center;
+}
+.burger-menu__box {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	gap: 30px 20px;
+}
+.burger-menu__item {
+	font-family: var(--nunito-sans);
+	text-align: center;
+	color: var(--dark);
+}
+.burger-menu__thumb {
+	width: 100%;
+	height: 430px;
+	position: relative;
+	overflow: hidden;
+}
+.burger-menu__thumb-img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	margin: 0px 0px 15px 0px;
+}
+.burger-menu__thumb-title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 38px;
+	margin: 0;
+}
+.burger-menu__thumb-price {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	opacity: 0.5;
+	margin: 5px;
+}
+.burger-menu__thumb-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.125rem;
+	text-transform: uppercase;
+	color: var(--dark);
+	padding: 10px 35px;
+	margin: 20px auto;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--accent-light);
+	cursor: pointer;
+}
+.burger-menu__thumb-btn::before {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/menu/cart.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+} */
+/* Мой код, конец*/
+/* Код Анны Блок, начало*/
+
+.burger-menu__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 34px;
+}
+.burger-menu__title {
+	color: var(--dark);
+	font-family: var(--nunito-sans);
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 127%;
+	text-transform: uppercase;
+	margin: 0;
+}
+.burger-menu__select {
+	color: var(--dark);
+	font-size: 15px;
+	appearance: none;
+	flex-basis: 279px;
+	background-image: url(../img/menu/chevron-down.svg);
+	background-size: 14px 10px;
+	background-repeat: no-repeat;
+	background-position: 89% center;
+	border: 1px solid var(--line);
+	padding: 13px 30px;
+	border-radius: 22px;
+}
+.burger-menu__box {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	gap: 50px 20px;
+}
+.burger-menu__item {
+	font-family: var(--nunito-sans);
+	text-align: center;
+	color: var(--dark);
+}
+.burger-menu__thumb {
+	width: 100%;
+	height: 430px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.burger-menu__thumb-img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+.burger-menu__thumb-title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 126%;
+	margin: 0px 0px 10px 0px;
+}
+.burger-menu__thumb-price {
+	opacity: 0.5;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0px 0px 20px 0px;
+}
+.burger-menu__thumb-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 11px 32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--dark);
+	background-color: var(--accent-light);
+	border: none;
+	border-radius: 5px;
+}
+.burger-menu__thumb-btn::before {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/menu/cart.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
