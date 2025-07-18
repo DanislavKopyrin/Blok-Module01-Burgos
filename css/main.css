@@ -9,6 +9,7 @@
 	--light: #ffffff;
 	--light-rgb: 255, 255, 255;
 	--line: #dedede;
+	--dark-blue: #1e2f40;
 	/*Подключение цветов*/
 }
 body {
@@ -28,7 +29,7 @@ li {
 	margin: 0 auto;
 	/* padding: 0 15px; */ /*убрал, что бы контент в баннере не съезжал*/
 }
-/* Header */
+/*-- HEADER --*/
 .header {
 	border-bottom: 1px solid var(--line);
 }
@@ -103,7 +104,7 @@ li {
 	left: 17px;
 	bottom: 0;
 }
-/* Hero */
+/*-- HERO --*/
 .hero {
 	background-image: url(../img/hero.jpg);
 	background-size: cover;
@@ -153,7 +154,8 @@ li {
 	line-height: 160%;
 	margin: 0px auto;
 }
-/* Banner */
+/*-- BANNER -- */
+
 /* Мой код, старт*/
 /* .banner {
 	background-image: url(../img/banner_burger.png);
@@ -270,7 +272,8 @@ li {
 .banner-btn:hover {
 	background-color: var(--accent-dark);
 }
-/* Burger Menu*/
+/*-- MAIN --*/
+
 /* Мой код, старт*/
 /* .main {
 }
@@ -373,7 +376,6 @@ li {
 } */
 /* Мой код, конец*/
 /* Код Анны Блок, начало*/
-
 .burger-menu__header {
 	display: flex;
 	align-items: center;
@@ -395,7 +397,7 @@ li {
 	font-size: 15px;
 	appearance: none;
 	flex-basis: 279px;
-	background-image: url(../img/menu/chevron-down.svg);
+	background-image: url(../img/menu/icon/chevron-down.svg);
 	background-size: 14px 10px;
 	background-repeat: no-repeat;
 	background-position: 89% center;
@@ -463,8 +465,78 @@ li {
 	display: block;
 	width: 18px;
 	height: 18px;
-	background-image: url(../img/menu/cart.svg);
+	background-image: url(../img/menu/icon/cart.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+/*-- FOOTER --*/
+.footer {
+	color: var(--light);
+	margin: 141px 0px 0px 0px;
+	background-color: var(--dark-blue);
+	padding: 117px 0px;
+}
+.footer-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-logo {
+	display: block;
+	background-image: url(../img/logo_burgos_light.svg);
+	width: 63px;
+	height: 56px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.footer-item {
+	/* padding: 10px 0px 0px 0px; */
+}
+.footer-title {
+	font-family: var(--nunito-sans);
+	font-size: 20px;
+	line-height: 190%;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0px 0px 12px 0px;
+}
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+.footer-nav__link {
+	color: rgba(var(--light-rgb), 0.9);
+	font-size: 15px;
+	line-height: 160%;
+}
+.footer-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+.footer-list__item {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 160%;
+}
+.footer-list__item span {
+	display: block;
+	font-weight: 400;
+	color: rgba(var(--light-rgb), 0.9);
+}
+.footer-list__item:not(:last-child) {
+	margin: 0px 0px 12px 0px;
+}
+.footer-list li {
+	margin-bottom: 12px;
+}
+.footer-tel {
+	display: block;
+	color: var(--accent-light);
+	font-family: var(--nunito-sans);
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 12px 0px 0px 0px;
 }
