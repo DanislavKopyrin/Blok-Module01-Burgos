@@ -10,7 +10,7 @@
 	--light-rgb: 255, 255, 255;
 	--line: #dedede;
 	--dark-blue: #1e2f40;
-	--tr: all 0.2s ease-in-out;
+	--tr: 0.4s;
 	/*Подключение цветов*/
 }
 body {
@@ -67,7 +67,7 @@ li {
 	height: 3px;
 	background-color: transparent;
 	border-radius: 1.5px;
-	/* transition: width 0.3s ease-in-out; */
+	transition: var(--tr);
 }
 .header-nav__link:hover::after {
 	background-color: var(--accent-light);
@@ -114,6 +114,24 @@ li {
 	text-align: center;
 	padding: 142px 0px;
 }
+.hero-contact {
+	position: relative;
+	background: url(../img/contact/hero_contact.jpg);
+}
+.hero-contact::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.hero-contact .container {
+	position: relative;
+	z-index: 2;
+}
 .breadcrumbs {
 	display: flex;
 	align-items: center;
@@ -135,6 +153,7 @@ li {
 }
 .breadcrumbs-link {
 	color: rgba(var(--light-rgb), 0.5);
+	transition: var(--tr);
 }
 .breadcrumbs-link:hover {
 	color: var(--accent-light);
@@ -275,7 +294,6 @@ li {
 	background-color: var(--accent-dark);
 }
 /*-- MAIN --*/
-
 /* Мой код, старт*/
 /* .main {
 }
@@ -461,6 +479,10 @@ li {
 	background-color: var(--accent-light);
 	border: none;
 	border-radius: 5px;
+	transition: var(--tr);
+}
+.burger-menu__thumb-btn:hover {
+	background-color: var(--accent-dark);
 }
 .burger-menu__thumb-btn::before {
 	content: "";
@@ -514,6 +536,10 @@ li {
 	color: rgba(var(--light-rgb), 0.9);
 	font-size: 15px;
 	line-height: 160%;
+	transition: var(--tr);
+}
+.footer-nav__link:hover {
+	color: var(--accent-light);
 }
 .footer-list {
 	list-style-type: none;
@@ -544,4 +570,9 @@ li {
 	font-weight: 800;
 	text-transform: uppercase;
 	margin: 7px 5px 15px 0px;
+	transition: var(--tr);
 }
+.footer-tel:hover {
+	color: var(--accent-dark);
+}
+/*-- CONTACT PAGE --*/
