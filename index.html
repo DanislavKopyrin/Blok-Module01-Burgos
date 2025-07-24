@@ -10,12 +10,12 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header class="header">
+		<header class="header" id="headerTop">
 			<div class="container">
 				<div class="header-wrapper">
 					<div class="logo"></div>
 					<nav class="header-nav">
-						<a href="#" class="header-nav__link">Главная</a>
+						<a href="index.html" class="header-nav__link">Главная</a>
 						<a href="#" class="header-nav__link">Меню</a>
 						<a href="#" class="header-nav__link">О нас</a>
 						<a href="pages/contact.html" class="header-nav__link">Контакты</a>
@@ -52,13 +52,13 @@
 						Только при&nbsp;покупке 3-х и более позиций, мы дарим скидку. Акции
 						не&nbsp;суммируются.
 					</p>
-					<button type="button" class="banner-btn">Купить сейчас</button>
+					<a href="#menuBurger" class="banner-btn">Купить сейчас</a>
 				</div>
 			</div>
 		</section>
 		<!-- MAIN -->
 		<main class="main">
-			<section>
+			<section id="menuBurger">
 				<div class="container">
 					<div class="burger-menu">
 						<div class="burger-menu__header">
@@ -221,10 +221,10 @@
 					<div class="footer-item__link">
 						<h3 class="footer-title">Основные ссылки</h3>
 						<nav class="footer-nav">
-							<a href="#" class="footer-nav__link">Меню</a>
+							<a href="index.html" class="footer-nav__link">Меню</a>
 							<a href="#" class="footer-nav__link">Заказ и Доставка</a>
 							<a href="#" class="footer-nav__link">Методы оплаты</a>
-							<a href="#" class="footer-nav__link">Контакты</a>
+							<a href="pages/contact.html" class="footer-nav__link">Контакты</a>
 						</nav>
 					</div>
 					<div class="footer-item__info">
@@ -251,5 +251,7 @@
 				</div>
 			</div>
 		</footer>
+		<a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+		<script src="js/main.js"></script>
 	</body>
 </html>

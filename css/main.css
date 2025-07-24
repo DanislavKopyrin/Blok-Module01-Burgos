@@ -105,6 +105,40 @@ li {
 	left: 17px;
 	bottom: 0;
 }
+/* .button-up {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 100;
+} */
+.button-up {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: var(--nunito-sans);
+	padding: 5px 5px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--dark);
+	background-color: var(--accent-light);
+	border: none;
+	border-radius: 5px;
+	transition: var(--tr);
+	z-index: 100;
+}
+.button-up:hover {
+	background-color: var(--accent-dark);
+}
+.button-up.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.button-up.visible {
+	opacity: 1;
+}
 /*-- HERO --*/
 .hero {
 	background-image: url(../img/hero.jpg);
@@ -278,10 +312,13 @@ li {
 	line-height: 160%; /*!1.5rem; 24px*/
 }
 .banner-btn {
+	display: block;
+	max-width: 170px;
 	font-size: 14px;
 	font-weight: 700;
 	font-family: var(--nunito-sans);
-	padding: 22px 25px;
+	padding: 22px 0px;
+	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--dark);
@@ -293,6 +330,10 @@ li {
 .banner-btn:hover {
 	background-color: var(--accent-dark);
 }
+/* .banner-btn:active {
+	background-color: var(--accent-light);
+} */
+/* Код Анны Блок, конец*/
 /*-- MAIN --*/
 /* Мой код, старт*/
 /* .main {
