@@ -1,6 +1,30 @@
 @media (max-width: 1080px) {
+	.header-wrapper {
+		gap: 40px;
+	}
 	.header-nav {
 		margin-left: 0px;
-		font-size: 80px;
+		gap: min(3vw, 30px);
+	}
+}
+@media (max-width: 768px) {
+	.logo {
+		width: 150px;
+		height: 47.81px;
+	}
+	.header-wrapper {
+		gap: 45px;
+	}
+	.header-nav {
+		gap: 22px;
+	}
+	.banner {
+		margin: 72px 0px 0px 0px;
+	}
+	.banner-wrapper {
+		padding: 100px 40px;
+	}
+	.burger-menu__header {
+		margin: 80px 0px 0px 0px;
 	}
 }
