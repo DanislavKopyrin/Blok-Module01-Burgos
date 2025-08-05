@@ -270,7 +270,7 @@ li {
 /* Мой код, конец*/
 /* Код Анны Блок, начало*/
 .banner {
-	margin: 140px 140px 0px 140px;
+	margin: 140px 0px 0px 0px;
 }
 .banner-wrapper {
 	background-image: url(../img/banner_burger.png);
@@ -543,11 +543,12 @@ li {
 	color: var(--light);
 	margin: 141px 0px 0px 0px;
 	background-color: var(--dark-blue);
-	padding: 115px;
+	padding: 115px 0px;
 }
 .footer-wrapper {
 	display: flex;
 	justify-content: space-between;
+	gap: 15px;
 }
 .footer-logo {
 	display: block;
@@ -558,18 +559,18 @@ li {
 	background-repeat: no-repeat;
 }
 .footer-item__link {
-	margin: 0px 26px 0px 0px;
+	margin: -8px 0px 0px 12px;
 }
 .footer-item__info {
-	margin: 0px 7px 0px 0px;
+	margin: -8px 0px 0px 32px;
 }
 .footer-title {
 	font-family: var(--nunito-sans);
 	font-size: 20px;
-	line-height: 190%;
+	line-height: 150%;
 	font-weight: 800;
 	text-transform: uppercase;
-	margin: -3px 0px 10px 0px;
+	margin: 9px 0px 13px 0px;
 }
 .footer-nav {
 	display: flex;
@@ -606,15 +607,22 @@ li {
 .footer-list li {
 	margin-bottom: 12px;
 }
+.footer-item:last-child {
+	flex-basis: 194px;
+}
 .footer-tel {
 	display: block;
 	color: var(--accent-light);
 	font-family: var(--nunito-sans);
 	font-size: 20px;
 	font-weight: 800;
+	text-align: right;
 	text-transform: uppercase;
 	margin: 7px 5px 15px 0px;
 	transition: var(--tr);
+}
+.footer-tel._mobile {
+	display: none;
 }
 .footer-tel:hover {
 	color: var(--accent-dark);
