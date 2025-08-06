@@ -25,6 +25,18 @@
 	.header-nav {
 		gap: 22px;
 	}
+	.hero {
+		padding: 144px 0px;
+	}
+	.breadcrumbs {
+		padding-left: 15px;
+	}
+	.hero-title {
+		padding-left: 15px;
+	}
+	.hero-description {
+		padding-left: 15px;
+	}
 	.banner {
 		margin: 72px 0px 0px 0px;
 	}
@@ -33,6 +45,9 @@
 	}
 	.burger-menu__header {
 		margin: 80px 0px 34px 0px;
+	}
+	.burger-menu__header._additionally {
+		margin: 89px 0px 33px 0px;
 	}
 	.burger-menu__box {
 		grid-template-columns: repeat(2, 1fr);
@@ -50,15 +65,180 @@
 	.burger-menu__thumb {
 		flex-basis: calc(60% - 20px);
 		height: 430px;
-		margin-bottom: 0;
+		margin-bottom: 20px;
 	}
 	.burger-menu__item._additionally .burger-menu__thumb {
-		flex-basis: calc(60% - 20px);
+		flex-basis: calc(65% - 20px);
 		height: 260px;
 		margin-bottom: 0;
 	}
+	.burger-menu__thumb-title {
+		margin-bottom: 7px;
+	}
+	.burger-menu__item._additionally .burger-menu__thumb-title {
+		margin-bottom: 5px;
+	}
+	.burger-menu__thumb-price {
+		margin-bottom: 23px;
+	}
+	.burger-menu__item._additionally .burger-menu__thumb-price {
+		margin-bottom: 20px;
+	}
 	.burger-menu__item._additionally .burger-menu__info {
-		flex-basis: 40%;
+		flex-basis: 38%;
+	}
+	.footer {
+		padding: 62px 0px 71px 0px;
+	}
+	.footer-nav {
+		margin: 0px 0px 20px 0px;
+	}
+	.footer-item:last-child {
+		display: none;
+	}
+	.footer-tel._mobile {
+		display: block;
+		text-align: left;
+	}
+}
+@media (width <= 730px) {
+	.burger-menu__modal {
+		display: block;
+	}
+	.logo {
+		width: 116px;
+		height: 37px;
+		flex-grow: 1;
+	}
+	.header-wrapper {
+		justify-content: start;
+		gap: 21px;
+		padding: 20px 0px;
+	}
+	.header-nav {
+		display: none;
+	}
+	.header-nav._modal {
+		display: flex;
+		flex-direction: column;
+	}
+	.header-nav__link::after {
+		display: none;
+	}
+	.modal {
+		width: 100%;
+		max-width: 500px;
+		background-color: #fff8dc;
+		padding: 40px 15px;
+		position: absolute;
+		top: -400px;
+		left: 0;
+		right: 0;
+		box-sizing: border-box;
+		margin: 0 auto;
+		text-align: center;
+		transition: var(--tr);
+	}
+	.modal-close {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 22px;
+		height: 22px;
+		background-image: url(../img/burger-menu__modal-close.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		border: none;
+	}
+	.modal-close:hover {
+		cursor: pointer;
+	}
+	.banner-wrapper {
+		padding: 35px 86px 34px 17px;
+	}
+	.hero {
+		padding: 55px 32px;
+	}
+	.breadcrumbs {
+		font-size: 14px;
+		color: var(--line);
+		padding-left: 15px;
+	}
+	.breadcrumbs-link {
+		color: var(--line);
+	}
+	.hero-title {
+		font-size: 38px;
+		padding-left: 15px;
+		margin: 22px 0px 8px 0px;
+	}
+	.hero-description {
+		font-size: 12px;
+		line-height: 1.67;
+		padding-left: 15px;
+	}
+	.banner {
+		margin: 33px 0px 0px 0px;
+	}
+	.burger-menu__header {
+		margin: 80px 0px 34px 0px;
+	}
+	.burger-menu__header._additionally {
+		margin: 89px 0px 33px 0px;
+	}
+	.burger-menu__select {
+		font-size: 12px;
+		line-height: 1.92;
+		flex-basis: 136px;
+		background-size: 13px 8px;
+		background-position: 89% center;
+		padding: 8px 0 8px 15px;
+	}
+	.burger-menu__title {
+		font-size: 27px;
+	}
+	.burger-menu__box {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 50px 20px;
+	}
+	.burger-menu__box._additionally {
+		grid-template-columns: 1fr;
+		gap: 50px 20px;
+	}
+	.burger-menu__item._additionally {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	.burger-menu__thumb {
+		flex-basis: calc(60% - 20px);
+		height: 430px;
+		margin-bottom: 20px;
+	}
+	.burger-menu__item._additionally .burger-menu__thumb {
+		flex-basis: calc(65% - 20px);
+		height: 260px;
+		margin-bottom: 0;
+	}
+	.burger-menu__thumb-title {
+		margin-bottom: 7px;
+	}
+	.burger-menu__item._additionally .burger-menu__thumb-title {
+		margin-bottom: 5px;
+	}
+	.burger-menu__thumb-price {
+		margin-bottom: 23px;
+	}
+	.burger-menu__item._additionally .burger-menu__thumb-price {
+		margin-bottom: 20px;
+	}
+	.burger-menu__item._additionally .burger-menu__info {
+		flex-basis: 38%;
+	}
+	.footer {
+		padding: 62px 0px 71px 0px;
 	}
 	.footer-nav {
 		margin: 0px 0px 20px 0px;

@@ -13,7 +13,8 @@
 		<!-- HEADER -->
 		<header class="header" id="headerTop">
 			<div class="container">
-				<div class="header-wrapper">
+				<div class="headechange filesr-wrapper">
+					<button class="burger-menu__modal" onclick="openModal()"></button>
 					<div class="logo"></div>
 					<nav class="header-nav">
 						<a href="index.html" class="header-nav__link">Главная</a>
@@ -163,7 +164,7 @@
 			<section>
 				<div class="container">
 					<div class="burger-menu">
-						<div class="burger-menu__header">
+						<div class="burger-menu__header _additionally">
 							<h2 class="burger-menu__title">Дополнительно</h2>
 						</div>
 						<div class="burger-menu__box _additionally">
@@ -261,6 +262,15 @@
 			</div>
 		</footer>
 		<a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+		<div class="modal" id="modal">
+			<nav class="header-nav _modal">
+				<a href="index.html" class="header-nav__link">Главная</a>
+				<a href="#" class="header-nav__link">Меню</a>
+				<a href="#" class="header-nav__link">О нас</a>
+				<a href="pages/contact.html" class="header-nav__link">Контакты</a>
+			</nav>
+			<button class="modal-close" onclick="closeModal()"></button>
+		</div>
 		<script src="js/main.js"></script>
 	</body>
 </html>
