@@ -164,26 +164,40 @@
 	.breadcrumbs {
 		font-size: 14px;
 		color: var(--line);
-		padding-left: 15px;
+		padding: 1px 0px;
+		gap: 12px;
 	}
 	.breadcrumbs-link {
 		color: var(--line);
 	}
 	.hero-title {
 		font-size: 38px;
-		padding-left: 15px;
-		margin: 22px 0px 8px 0px;
+		padding: 0px;
+		margin: 29px 0px 10px 0px;
 	}
 	.hero-description {
 		font-size: 12px;
 		line-height: 1.67;
-		padding-left: 15px;
+		padding: 0px;
 	}
 	.banner {
 		margin: 33px 0px 0px 0px;
 	}
+	.banner-title {
+		span {
+			margin: 0px 0px 5px 0px;
+		}
+	}
+	.banner-description {
+		font-size: 14px;
+		margin: 0px 0px 18px 0px;
+	}
+	.banner-btn {
+		max-width: 197px;
+	}
 	.burger-menu__header {
-		margin: 80px 0px 34px 0px;
+		gap: 54px;
+		margin: 58px 0px 31px 0px;
 	}
 	.burger-menu__header._additionally {
 		margin: 89px 0px 33px 0px;
@@ -191,9 +205,9 @@
 	.burger-menu__select {
 		font-size: 12px;
 		line-height: 1.92;
-		flex-basis: 136px;
+		flex-basis: 148px;
 		background-size: 13px 8px;
-		background-position: 89% center;
+		background-position: 90% center;
 		padding: 8px 0 8px 15px;
 	}
 	.burger-menu__title {
@@ -214,7 +228,7 @@
 	}
 	.burger-menu__thumb {
 		flex-basis: calc(60% - 20px);
-		height: 430px;
+		height: 180px;
 		margin-bottom: 20px;
 	}
 	.burger-menu__item._additionally .burger-menu__thumb {
@@ -223,6 +237,7 @@
 		margin-bottom: 0;
 	}
 	.burger-menu__thumb-title {
+		font-size: 13px;
 		margin-bottom: 7px;
 	}
 	.burger-menu__item._additionally .burger-menu__thumb-title {
