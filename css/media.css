@@ -126,6 +126,7 @@
 		display: none;
 	}
 	.modal {
+		display: block;
 		width: 100%;
 		max-width: 500px;
 		background-color: #fff8dc;
@@ -152,9 +153,6 @@
 		background-color: transparent;
 		border: none;
 	}
-	.modal-close:hover {
-		cursor: pointer;
-	}
 	.banner-wrapper {
 		padding: 35px 86px 34px 17px;
 	}
@@ -173,7 +171,7 @@
 	.hero-title {
 		font-size: 38px;
 		padding: 0px;
-		margin: 29px 0px 10px 0px;
+		margin: 28px 0px 10px 0px;
 	}
 	.hero-description {
 		font-size: 12px;
@@ -197,72 +195,106 @@
 	}
 	.burger-menu__header {
 		gap: 54px;
-		margin: 58px 0px 31px 0px;
+		margin: 50px 0px 24px 0px;
 	}
 	.burger-menu__header._additionally {
-		margin: 89px 0px 33px 0px;
+		margin: 50px 0px 24px 0px;
 	}
 	.burger-menu__select {
 		font-size: 12px;
 		line-height: 1.92;
-		flex-basis: 148px;
+		flex-basis: 136px;
+		width: 136px;
 		background-size: 13px 8px;
 		background-position: 90% center;
 		padding: 8px 0 8px 15px;
 	}
 	.burger-menu__title {
 		font-size: 27px;
+		line-height: 2.074;
 	}
 	.burger-menu__box {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 50px 20px;
+		gap: 24px 20px;
 	}
 	.burger-menu__box._additionally {
-		grid-template-columns: 1fr;
-		gap: 50px 20px;
-	}
-	.burger-menu__item._additionally {
-		display: flex;
-		align-items: center;
-		gap: 20px;
+		gap: 24px 20px;
 	}
 	.burger-menu__thumb {
-		flex-basis: calc(60% - 20px);
-		height: 180px;
-		margin-bottom: 20px;
+		height: 50vw;
+		margin-bottom: 7px;
 	}
 	.burger-menu__item._additionally .burger-menu__thumb {
-		flex-basis: calc(65% - 20px);
-		height: 260px;
+		height: 30vw;
 		margin-bottom: 0;
 	}
 	.burger-menu__thumb-title {
 		font-size: 13px;
-		margin-bottom: 7px;
+		line-height: 1.54;
+		font-weight: 700;
+		margin: 0;
 	}
 	.burger-menu__item._additionally .burger-menu__thumb-title {
-		margin-bottom: 5px;
+		margin: 0;
 	}
 	.burger-menu__thumb-price {
-		margin-bottom: 23px;
+		font-size: 12px;
+		line-height: 2.33;
+		margin-bottom: 7px;
+	}
+	.burger-menu__thumb-btn {
+		gap: 8px;
+		line-height: 1.28;
+		padding: 10px 22px;
 	}
 	.burger-menu__item._additionally .burger-menu__thumb-price {
-		margin-bottom: 20px;
-	}
-	.burger-menu__item._additionally .burger-menu__info {
-		flex-basis: 38%;
+		font-size: 12px;
+		line-height: 2.33;
+		margin-bottom: 7px;
 	}
 	.footer {
-		padding: 62px 0px 71px 0px;
+		margin: 80px 0px 0px 0px;
+		/* padding: 61px 0px 61px 0px; */
 	}
-	.footer-nav {
-		margin: 0px 0px 20px 0px;
+	.footer-wrapper {
+		position: relative;
+		flex-direction: column;
+		gap: 35px;
 	}
-	.footer-item:last-child {
-		display: none;
+	.footer-logo {
+		margin: 0px 0px 9px 0px;
+	}
+	.footer-item__link,
+	.footer-item__info {
+		margin: 0;
 	}
 	.footer-tel._mobile {
-		display: block;
-		text-align: left;
+		position: absolute;
+		top: -10px;
+		right: 0px;
+	}
+	.footer-tel._mobile + .footer-tel._mobile {
+		top: 29px;
+	}
+	.footer-title {
+		font-size: 18px;
+		line-height: 2.11;
+		margin: 0;
+	}
+	.footer-nav {
+		margin: 11px 0px 0px 0px;
+	}
+	.footer-list {
+		margin: 14px 0px 0px 0px;
+	}
+}
+
+@media (width <= 500px) {
+	.burger-menu__item._additionally .burger-menu__thumb {
+		flex-basis: calc(100% - 130px - 20px);
+		height: 40vw;
+		margin-bottom: 0;
+	}
+	.burger-menu__item._additionally .burger-menu__info {
+		flex-basis: 130px;
 	}
 }
